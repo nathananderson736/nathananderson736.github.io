@@ -1,0 +1,1166 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/base/_normalize.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../sass/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../sass/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 134, ../sass/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 143, ../sass/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 151, ../sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 159, ../sass/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 163, ../sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 174, ../sass/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 182, ../sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 193, ../sass/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 201, ../sass/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 211, ../sass/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 219, ../sass/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 242, ../sass/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 256, ../sass/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 267, ../sass/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 280, ../sass/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 292, ../sass/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 301, ../sass/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 312, ../sass/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 324, ../sass/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 336, ../sass/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 347, ../sass/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 360, ../sass/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 369, ../sass/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 380, ../sass/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 389, ../sass/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 398, ../sass/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 409, ../sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 414, ../sass/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 203, ../sass/vendors/typesettings/_typesettings.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 207, ../sass/vendors/typesettings/_typesettings.scss */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* line 219, ../sass/vendors/typesettings/_typesettings.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 224, ../sass/vendors/typesettings/_typesettings.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: black;
+}
+
+/* line 231, ../sass/vendors/typesettings/_typesettings.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+/* line 253, ../sass/vendors/typesettings/_typesettings.scss */
+h1, .h1 {
+  margin-bottom: 0.21104em;
+  font-size: 1.77689em;
+  line-height: 1.26626;
+}
+@media (min-width: 43.75em) {
+  /* line 253, ../sass/vendors/typesettings/_typesettings.scss */
+  h1, .h1 {
+    margin-bottom: 0.15832em;
+    font-size: 2.36859em;
+    line-height: 1.26657;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 253, ../sass/vendors/typesettings/_typesettings.scss */
+  h1, .h1 {
+    margin-bottom: 0.11877em;
+    font-size: 3.15733em;
+    line-height: 1.18771;
+  }
+}
+
+/* line 269, ../sass/vendors/typesettings/_typesettings.scss */
+h2, .h2 {
+  margin-bottom: 0.28132em;
+  font-size: 1.333em;
+  line-height: 1.4066;
+}
+@media (min-width: 43.75em) {
+  /* line 269, ../sass/vendors/typesettings/_typesettings.scss */
+  h2, .h2 {
+    margin-bottom: 0.21104em;
+    font-size: 1.77689em;
+    line-height: 1.26626;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 269, ../sass/vendors/typesettings/_typesettings.scss */
+  h2, .h2 {
+    margin-bottom: 0.15832em;
+    font-size: 2.36859em;
+    line-height: 1.26657;
+  }
+}
+
+/* line 284, ../sass/vendors/typesettings/_typesettings.scss */
+h3, .h3 {
+  margin-bottom: 0.28132em;
+  font-size: 1.333em;
+  line-height: 1.4066;
+}
+@media (min-width: 56.25em) {
+  /* line 284, ../sass/vendors/typesettings/_typesettings.scss */
+  h3, .h3 {
+    margin-bottom: 0.21104em;
+    font-size: 1.77689em;
+    line-height: 1.26626;
+  }
+}
+
+/* line 294, ../sass/vendors/typesettings/_typesettings.scss */
+h4, .h4 {
+  margin-bottom: 0.28132em;
+  font-size: 1.333em;
+  line-height: 1.4066;
+}
+
+/* line 299, ../sass/vendors/typesettings/_typesettings.scss */
+h5, .h5,
+h6, .h6 {
+  margin-bottom: 0.375em;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 305, ../sass/vendors/typesettings/_typesettings.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 36em;
+  word-wrap: break-word;
+}
+
+/* line 327, ../sass/vendors/typesettings/_typesettings.scss */
+small,
+.font-small {
+  font-size: 0.75019em;
+  line-height: 1.49963;
+}
+
+/* line 332, ../sass/vendors/typesettings/_typesettings.scss */
+em {
+  font-style: italic;
+}
+
+/* line 336, ../sass/vendors/typesettings/_typesettings.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 340, ../sass/vendors/typesettings/_typesettings.scss */
+blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.5em;
+  border-left: 6px solid gray;
+}
+/* line 349, ../sass/vendors/typesettings/_typesettings.scss */
+blockquote p {
+  margin-bottom: 0.75em;
+}
+/* line 355, ../sass/vendors/typesettings/_typesettings.scss */
+blockquote footer cite:before {
+  content: " – ";
+}
+
+/* line 362, ../sass/vendors/typesettings/_typesettings.scss */
+pre,
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+/* line 367, ../sass/vendors/typesettings/_typesettings.scss */
+time,
+.time {
+  text-transform: uppercase;
+}
+
+/* line 372, ../sass/vendors/typesettings/_typesettings.scss */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 381, ../sass/vendors/typesettings/_typesettings.scss */
+ul ul,
+ol ol,
+dl dl {
+  margin-left: 0;
+}
+
+/* line 387, ../sass/vendors/typesettings/_typesettings.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 391, ../sass/vendors/typesettings/_typesettings.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 396, ../sass/vendors/typesettings/_typesettings.scss */
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+/* line 403, ../sass/vendors/typesettings/_typesettings.scss */
+abbr[title]:hover {
+  cursor: help;
+}
+
+/* line 409, ../sass/vendors/typesettings/_typesettings.scss */
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  border: none;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 1.4375em;
+}
+
+/*
+	jQuery.mmenu CSS
+*/
+/*
+	jQuery.mmenu offcanvas addon CSS
+*/
+/* line 9, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+.mm-page {
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 14, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+.mm-slideout {
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+/* line 22, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+html.mm-opened {
+  overflow: hidden;
+  position: relative;
+}
+/* line 27, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+html.mm-opened body {
+  overflow: hidden;
+}
+/* line 31, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+html.mm-opened .mm-page {
+  min-height: 100vh;
+}
+
+/* line 38, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+html.mm-background .mm-page {
+  background: inherit;
+}
+
+/* line 42, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+#mm-blocker {
+  background: rgba(3, 2, 1, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+/* line 56, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+  display: block;
+}
+
+/* line 65, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+.mm-menu.mm-offcanvas {
+  display: none;
+  position: fixed;
+}
+/* line 70, ../sass/vendors/mmenu/addons/_jquery.mmenu.offcanvas.scss */
+.mm-menu.mm-current {
+  display: block;
+}
+
+/* line 5, ../sass/vendors/mmenu/_inc/_sizing.scss */
+.mm-menu {
+  width: 80%;
+  min-width: 140px;
+  max-width: 440px;
+}
+
+/* line 13, ../sass/vendors/mmenu/_inc/_sizing.scss */
+html.mm-opening .mm-slideout {
+  -webkit-transform: translate(80%, 0);
+  -moz-transform: translate(80%, 0);
+  -ms-transform: translate(80%, 0);
+  -o-transform: translate(80%, 0);
+  transform: translate(80%, 0);
+}
+
+@media all and (max-width: 175px) {
+  /* line 21, ../sass/vendors/mmenu/_inc/_sizing.scss */
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(140px, 0);
+    -moz-transform: translate(140px, 0);
+    -ms-transform: translate(140px, 0);
+    -o-transform: translate(140px, 0);
+    transform: translate(140px, 0);
+  }
+}
+@media all and (min-width: 550px) {
+  /* line 30, ../sass/vendors/mmenu/_inc/_sizing.scss */
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(440px, 0);
+    -moz-transform: translate(440px, 0);
+    -ms-transform: translate(440px, 0);
+    -o-transform: translate(440px, 0);
+    transform: translate(440px, 0);
+  }
+}
+/* line 3, ../sass/helpers/_positioning.scss */
+.left {
+  float: left;
+}
+
+/* VERTICAL GRID VALUE --------------------------------------------------
+
+// Below variables included in _typesettings.scss
+// ($base-vertical-unit = 6 x $base-line-multi = 4) = 24px
+// 24px = 1.5em line height
+
+// Multiples of (line height px value) can be used for margins and padding etc
+// as number can be multiplied to match line height px value
+   
+---------------------------------------------------------------------- */
+/* Set font-family to Open Sans font,
+   normalize causes family to fallback on
+   sans serif */
+/* line 14, ../sass/base/_typography.scss */
+p, .button {
+  font-family: "Open Sans";
+}
+
+/* Set consistent font family for headers down to h4 */
+/* Remove faux/fake bold font weight from headers */
+/* line 20, ../sass/base/_typography.scss */
+h1, h2, h3, h4 {
+  font-family: "Special Elite", cursive;
+  font-weight: 400;
+}
+
+/* Remove margin bottom from h1 so any headers directly below appear related */
+/* line 26, ../sass/base/_typography.scss */
+#main-banner h1 {
+  margin-bottom: 0;
+}
+
+/* Set nested h1 headers to display lowercase */
+/* line 31, ../sass/base/_typography.scss */
+#wrapper > nav h1 {
+  text-transform: lowercase;
+}
+
+/* Span tags within buttons */
+/* line 36, ../sass/base/_typography.scss */
+button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Paragraphs widths are usually 100% combined with text-align: center, the paragraphs appear centered
+   but once they reach their max widths, without the actual paragraph container being margin centered, 
+   paragraph container will sit to the left, with only the text aligned center */
+/* line 44, ../sass/base/_typography.scss */
+section p {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 48em) {
+  /* line 44, ../sass/base/_typography.scss */
+  section p {
+    margin-left: 0;
+  }
+}
+
+/* REUSABLE CLASSES TO STYLE TYPOGRAPHY ----------------------------------------------------------
+   Accessibility (span) for font icon buttons with hidden text */
+/* line 54, ../sass/base/_typography.scss */
+.accessibility-span {
+  display: none;
+  margin-left: .2em;
+}
+
+/* line 2, ../sass/layout/_headers.scss */
+#mobile-header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+}
+@media (min-width: 48em) {
+  /* line 2, ../sass/layout/_headers.scss */
+  #mobile-header {
+    display: none;
+  }
+}
+
+/* NOTE: Styling for general content containers, styling for containers with  
+   semantic purpose can be found on other partials */
+/* line 3, ../sass/layout/_containers.scss */
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Main-banner is to instantly tell visitors whose page they are on, 
+   helping visitors quickly indentify wheither they have found what
+   they are looking for */
+/* line 13, ../sass/layout/_containers.scss */
+#main-banner {
+  color: #f7f7f6;
+  background-color: #ec6f63;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 1.49963em;
+  padding-right: 1.49963em;
+  padding-left: 1.49963em;
+  margin-bottom: 1.49963em;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  /* line 13, ../sass/layout/_containers.scss */
+  #main-banner {
+    float: right;
+    width: 70%;
+  }
+}
+
+/* Inner container to use inside banners, holding all text elements. Images
+   remain separate outside unless text-wrapping is desired */
+/* Center align text inside .banner-inner-container on mobile before going 
+   back to left aligned on tablet and up, matching alignment with the rest of the 
+   body text */
+/* line 34, ../sass/layout/_containers.scss */
+.banner-inner-container {
+  text-align: center;
+  margin-top: 1.49963em;
+}
+@media (min-width: 48em) {
+  /* line 34, ../sass/layout/_containers.scss */
+  .banner-inner-container {
+    float: left;
+    text-align: left;
+  }
+}
+
+/* Hold buttons and links in relation to project */
+/* line 45, ../sass/layout/_containers.scss */
+.project-actions-container {
+  text-align: center;
+  max-width: 640px;
+}
+
+/* Taking mobile users into account, content within sections is best centered until tablet
+   screen size is reached */
+/* line 3, ../sass/layout/_sections.scss */
+section {
+  text-align: center;
+  /* Allow inner padding in sections on both sides, to keep content from clashing with the edges */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0.99975em;
+  padding-right: 0.99975em;
+  overflow: hidden;
+  /* Because a majority of text within sections is to be aligned left on tablet and up, I
+     am setting alignment to the tag directly */
+  /* If a section/multiple sections need different alignment, a separate class should
+     be used to set the alignment */
+}
+@media (min-width: 48em) {
+  /* line 3, ../sass/layout/_sections.scss */
+  section {
+    text-align: left;
+  }
+}
+
+/* Main container housing sections, breaking down the main content/details about developer */
+@media (min-width: 48em) {
+  /* line 21, ../sass/layout/_sections.scss */
+  .sections-container {
+    width: 70%;
+    float: right;
+    clear: both;
+  }
+}
+
+/* NOTE: Classes to use directly on articles or containers nested within articles */
+/* line 2, ../sass/layout/_articles.scss */
+article {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  /* line 2, ../sass/layout/_articles.scss */
+  article {
+    float: left;
+    clear: both;
+  }
+}
+
+/* Base class for list styling */
+/* line 2, ../sass/layout/_lists.scss */
+.list {
+  list-style-position: inside;
+  overflow: hidden;
+}
+
+/* List for holding content such as articles etc */
+/* line 8, ../sass/layout/_lists.scss */
+.article-feed {
+  list-style-type: none;
+  padding-left: 0;
+  /* Target only direct descending list items holding articles, not lists nested in articles etc */
+}
+/* line 12, ../sass/layout/_lists.scss */
+.article-feed > li {
+  margin-bottom: 0.49987em;
+}
+
+/* List containing social media buttons/links to contact developer */
+/* line 18, ../sass/layout/_lists.scss */
+.contact-links-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* line 22, ../sass/layout/_lists.scss */
+.contact-links-list li {
+  margin-bottom: 0.49987em;
+  /* Display list items on same line instead of natural stacking */
+}
+@media (min-width: 48em) {
+  /* line 22, ../sass/layout/_lists.scss */
+  .contact-links-list li {
+    display: inline-block;
+  }
+}
+/* line 30, ../sass/layout/_lists.scss */
+.contact-links-list li a {
+  display: inline-block;
+  color: #f7f7f6;
+  margin-right: 0.49987em;
+}
+
+/* Remove default padding and bulletpoints for nav unordered lists */
+/* line 4, ../sass/layout/_navigation.scss */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Base website navigation container */
+/* line 11, ../sass/layout/_navigation.scss */
+#main-navigation {
+  /* Indent menu header and links, pushing away from left edge of nav container */
+  text-indent: 1.49963em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 1.49963em;
+  /* Position nav to be fixed to top of screen (tablet and above), menu will scroll with user */
+  /* Display block ensures if a menu plugin caused nav to display: none on mobile but is not
+     desired on tablet, nav will display on tablet and up */
+  /* Nested unordered list containing main links */
+}
+@media (min-width: 48em) {
+  /* line 11, ../sass/layout/_navigation.scss */
+  #main-navigation {
+    display: block;
+    /* Pull nav out of flow and become relative to body */
+    position: fixed;
+    top: 1.49963em;
+    /* Elements nested in wrapper container expand with #wrapper until it reaches max width, because 
+       nav is relative to body it needs a max width to know when to stop expanding and appear in flow with other elements */
+    width: 30%;
+    max-width: 360px;
+    text-align: right;
+    padding-right: 1.49963em;
+    /* ---------------------------------------- */
+  }
+}
+/* line 35, ../sass/layout/_navigation.scss */
+#main-navigation ul li a {
+  display: block;
+  color: inherit;
+  font-family: "Special Elite", cursive;
+  text-decoration: none;
+  word-wrap: break-word;
+  background-color: #f6bcb6;
+  padding-top: 0.49987em;
+  padding-bottom: 0.49987em;
+  margin-bottom: 0.49987em;
+  /* Add inner right padding to push li content away from right edge, on tablet and up */
+}
+@media (min-width: 48em) {
+  /* line 35, ../sass/layout/_navigation.scss */
+  #main-navigation ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 1.49963em;
+  }
+}
+
+/* Menu navigation button in to reveal menu on mobile */
+/* Without Javascript enabled, main navigation will be displayed
+   by default without needing to touch a button to reveal it */
+/* line 4, ../sass/components/_buttons.scss */
+#toggle-menu-button {
+  display: none;
+  background-color: #f7f7f6;
+  padding: 0.99975em;
+}
+
+/* Styling to be applied to buttons or links to be styled like buttons */
+/* line 11, ../sass/components/_buttons.scss */
+.button {
+  padding: 0.49987em;
+  border: none;
+  /* Inline elements with fontawesome class, nested within a button or link with the class name .button */
+  /* Increase icon font size without affecting text of a button */
+}
+/* line 17, ../sass/components/_buttons.scss */
+.button .fa {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+/* Placeholder contains base styling for links */
+/* line 2, ../sass/components/_links.scss */
+.project-link {
+  text-decoration: none;
+}
+
+/* Link button to project website */
+/* Inherit link placeholder styling */
+/* line 8, ../sass/components/_links.scss */
+.project-link {
+  display: inline-block;
+  color: #f7f7f6;
+  background-color: black;
+  padding-top: 0.49987em;
+  padding-right: 1.49963em;
+  padding-bottom: 0.49987em;
+  padding-left: 1.49963em;
+  margin-bottom: 0.49987em;
+}
+
+/* line 20, ../sass/components/_links.scss */
+.social-link {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: black;
+}
+/* line 23, ../sass/components/_links.scss */
+.social-link .fa {
+  padding: 0.99975em;
+}
+
+/* Illustration/image inside #main-banner */
+/* line 6, ../sass/components/_thumbnails.scss */
+#main-banner img {
+  display: block;
+  width: 35%;
+  max-width: 120px;
+  margin-right: auto;
+  /* Margin bottom with value of 1 times base-vertical-unit */
+  margin-bottom: 0.99975em;
+  margin-left: auto;
+  /* Float image next to banner header */
+}
+@media (min-width: 48em) {
+  /* line 6, ../sass/components/_thumbnails.scss */
+  #main-banner img {
+    float: left;
+    margin-right: 1.49963em;
+  }
+}
+
+/* Main article image intended to grab reader's attention */
+/* Because most the articles will be showcasing developer's
+   web projects, main article images are displayed stacked 
+   so visitor can view a proper size preview */
+/* line 26, ../sass/components/_thumbnails.scss */
+.main-article-thumbnail {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin-right: auto;
+  margin-bottom: 0.49987em;
+  margin-left: auto;
+}
+@media (min-width: 48em) {
+  /* line 26, ../sass/components/_thumbnails.scss */
+  .main-article-thumbnail {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Image of Developer */
+/* line 41, ../sass/components/_thumbnails.scss */
+#profile-image {
+  max-width: 50%;
+  margin-bottom: 0.49987em;
+}
+@media (min-width: 48em) {
+  /* line 41, ../sass/components/_thumbnails.scss */
+  #profile-image {
+    float: left;
+    margin-right: 1.49963em;
+  }
+}
