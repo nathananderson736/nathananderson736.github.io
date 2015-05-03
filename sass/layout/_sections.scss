@@ -1,0 +1,27 @@
+ /* Taking mobile users into account, content within sections is best centered until tablet
+    screen size is reached */
+section {
+    text-align: center;
+    /* Allow inner padding in sections on both sides, to keep content from clashing with the edges */ 
+    @include box-sizing(border-box); 
+    padding-left: emRhythm(2, $ms-down1);
+    padding-right: emRhythm(2, $ms-down1);
+    overflow: hidden;
+    
+    /* Because a majority of text within sections is to be aligned left on tablet and up, I
+       am setting alignment to the tag directly */
+    /* If a section/multiple sections need different alignment, a separate class should
+       be used to set the alignment */
+    @include breakpoint(tablet) {
+        text-align: left;
+    }
+}
+
+/* Main container housing sections, breaking down the main content/details about developer */
+.sections-container {
+    @include breakpoint(tablet) {
+        width: 70%;
+        float: right;
+        clear: both;
+    }
+}

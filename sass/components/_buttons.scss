@@ -1,0 +1,22 @@
+/* Menu navigation button in to reveal menu on mobile */
+/* Without Javascript enabled, main navigation will be displayed
+   by default without needing to touch a button to reveal it */
+#toggle-menu-button {
+	display: none;
+    background-color: $desert-storm;
+	padding: emRhythm(2, $ms-down1);
+}
+
+/* Styling to be applied to buttons or links to be styled like buttons */
+.button {
+	padding: emRhythm(1, $ms-down1);
+	border: none;
+	
+	/* Inline elements with fontawesome class, nested within a button or link with the class name .button */
+	/* Increase icon font size without affecting text of a button */
+	.fa {
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}
+

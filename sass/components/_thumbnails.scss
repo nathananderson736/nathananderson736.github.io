@@ -1,0 +1,50 @@
+// Consistent pre set max widths for thumbnails/images
+$sml-thumbnail-max-width: 120px; 
+$lrg-thumbnail-max-width: 640px; 
+
+/* Illustration/image inside #main-banner */
+#main-banner img {
+    display: block;
+    width: 35%; 
+    max-width: $sml-thumbnail-max-width;
+    margin-right: auto;
+    /* Margin bottom with value of 1 times base-vertical-unit */
+    margin-bottom: emRhythm(2, $ms-down1); 
+    margin-left: auto;
+    
+    /* Float image next to banner header */
+    @include breakpoint(tablet) {
+        float: left;
+        margin-right: emRhythm(3, $ms-down1);
+    }
+}
+
+/* Main article image intended to grab reader's attention */
+/* Because most the articles will be showcasing developer's
+   web projects, main article images are displayed stacked 
+   so visitor can view a proper size preview */
+.main-article-thumbnail {
+    display: block;
+    width: 100%;
+    max-width: $lrg-thumbnail-max-width;
+    margin-right: auto;
+    margin-bottom: emRhythm(1, $ms-down1); 
+    margin-left: auto;
+    
+    @include breakpoint(tablet) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Image of Developer */
+#profile-image {
+	max-width: 50%;
+	margin-bottom: emRhythm(1, $ms-down1);
+	
+	@include breakpoint(tablet) {
+		float: left;
+		margin-right: emRhythm(3, $ms-down1);
+	}
+}
+

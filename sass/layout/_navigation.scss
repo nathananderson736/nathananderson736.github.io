@@ -1,0 +1,60 @@
+// NOTE: Styling for main navigation
+
+/* Remove default padding and bulletpoints for nav unordered lists */
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Base website navigation container */
+#main-navigation {
+    /* Indent menu header and links, pushing away from left edge of nav container */
+    text-indent: emRhythm(3, $ms-down1);
+	@include box-sizing(border-box);
+    padding-top: emRhythm(3, $ms-down1);
+	
+    /* Position nav to be fixed to top of screen (tablet and above), menu will scroll with user */
+	/* Display block ensures if a menu plugin caused nav to display: none on mobile but is not
+	   desired on tablet, nav will display on tablet and up */
+    @include breakpoint(tablet) {
+		display: block;
+        /* Pull nav out of flow and become relative to body */
+        position: fixed;
+        top: emRhythm(3, $ms-down1);
+        /* Elements nested in wrapper container expand with #wrapper until it reaches max width, because 
+           nav is relative to body it needs a max width to know when to stop expanding and appear in flow with other elements */
+        width: 30%; 
+        max-width: 360px; 
+        text-align: right;
+        padding-right: emRhythm(3, $ms-down1);
+        /* ---------------------------------------- */
+    }
+    
+    /* Nested unordered list containing main links */
+    ul li a {
+		display: block;
+		color: inherit;
+        font-family: $main-nav-font;
+		text-decoration: none;
+        word-wrap: break-word;
+        background-color: $mandys-pink;
+        padding-top: emRhythm(1, $ms-down1);
+        padding-bottom:  emRhythm(1, $ms-down1);
+        margin-bottom: emRhythm(1, $ms-down1);
+        
+        /* Add inner right padding to push li content away from right edge, on tablet and up */
+        @include breakpoint(tablet) {
+            @include box-sizing(border-box);
+            padding-right: emRhythm(3, $ms-down1);
+        }
+    }
+}
+
+
+
+
+    
+
+
+    

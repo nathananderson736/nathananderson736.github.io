@@ -1,0 +1,58 @@
+/* NOTE: Styling for general content containers, styling for containers with  
+   semantic purpose can be found on other partials */
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+	background-color: white;
+}
+
+/* Main-banner is to instantly tell visitors whose page they are on, 
+   helping visitors quickly indentify wheither they have found what
+   they are looking for */
+#main-banner {
+    color: $desert-storm;
+    background-color: $burnt-sienna;
+    @include box-sizing(border-box);
+    padding-top: emRhythm(3, $ms-down1);
+    padding-right: emRhythm(3, $ms-down1);
+    padding-left: emRhythm(3, $ms-down1);
+    margin-bottom: emRhythm(3, $ms-down1);
+    overflow: hidden;
+    
+    @include breakpoint(tablet) {
+        float: right;
+        width: 70%;
+    }
+}
+
+/* Inner container to use inside banners, holding all text elements. Images
+   remain separate outside unless text-wrapping is desired */
+/* Center align text inside .banner-inner-container on mobile before going 
+   back to left aligned on tablet and up, matching alignment with the rest of the 
+   body text */
+.banner-inner-container {
+    text-align: center;
+    margin-top: emRhythm(3, $ms-down1);
+    
+    @include breakpoint(tablet) {
+        float: left;
+        text-align: left;
+    }
+}
+
+/* Hold buttons and links in relation to project */
+.project-actions-container {
+	text-align: center;
+	max-width: 640px;
+}
+
+
+
+
+    
+    
+    
+
+
+

@@ -1,0 +1,35 @@
+@import "compass/css3";
+
+// Normalize partial/stylesheet to fix browser inconsistancies
+@import "base/normalize";
+
+// Toolkit/Parital to help adapt font size to a modular scale
+// By: Ian Rose
+// Source: https://github.com/ianrose/typesettings
+@import "vendors/typesettings/typesettings";
+// Partial containing css styling for mmenu js plugin
+@import "vendors/mmenu/jquery.mmenu";
+
+// Partials for mixins/variables containing reusable values
+@import "helpers/mixins";
+@import "helpers/colours";
+@import "helpers/fonts";
+@import "helpers/positioning";
+
+// Partial for styling typography
+@import "base/typography";
+
+// Partials for styling layout related elements
+@import "layout/headers";
+@import "layout/containers";
+@import "layout/sections";
+@import "layout/articles";
+@import "layout/lists";
+@import "layout/navigation";
+
+// Partials containing reusable classes to style pieces such as buttons, thumbnails etc
+@import "components/buttons";
+@import "components/links";
+@import "components/thumbnails";
+
+

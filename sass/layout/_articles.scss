@@ -1,0 +1,15 @@
+/* NOTE: Classes to use directly on articles or containers nested within articles */
+article {
+    @include box-sizing(border-box);
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+        float: left;
+        clear: both;
+    }
+}
+
+

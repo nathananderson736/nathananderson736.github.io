@@ -1,0 +1,58 @@
+/* VERTICAL GRID VALUE --------------------------------------------------
+
+// Below variables included in _typesettings.scss
+// ($base-vertical-unit = 6 x $base-line-multi = 4) = 24px
+// 24px = 1.5em line height
+
+// Multiples of (line height px value) can be used for margins and padding etc
+// as number can be multiplied to match line height px value
+   
+---------------------------------------------------------------------- */
+/* Set font-family to Open Sans font,
+   normalize causes family to fallback on
+   sans serif */
+p, .button,  {
+	font-family: "Open Sans";
+}
+
+/* Set consistent font family for headers down to h4 */
+/* Remove faux/fake bold font weight from headers */
+h1, h2, h3, h4 {
+	font-family: $root-level-header;
+    font-weight: $regular;
+}
+
+/* Remove margin bottom from h1 so any headers directly below appear related */
+#main-banner h1 {
+    margin-bottom: 0;
+}
+
+/* Set nested h1 headers to display lowercase */
+#wrapper > nav h1 {
+    text-transform: lowercase;
+}
+
+/* Span tags within buttons */
+button span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Paragraphs widths are usually 100% combined with text-align: center, the paragraphs appear centered
+   but once they reach their max widths, without the actual paragraph container being margin centered, 
+   paragraph container will sit to the left, with only the text aligned center */
+section p {
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(tablet) {
+        margin-left: 0; 
+    }
+}
+
+/* REUSABLE CLASSES TO STYLE TYPOGRAPHY ----------------------------------------------------------
+   Accessibility (span) for font icon buttons with hidden text */
+.accessibility-span {
+    display: none; 
+    margin-left: .2em;
+}
+

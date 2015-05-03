@@ -1,0 +1,23 @@
+// Font family stacks, hold desired fonts followed by fallbacks
+$special-elite-font-stack: "Special Elite", cursive;
+$open-sans: "Open Sans", sans-serif;
+
+// Font awesome icon unicodes
+$hamburger-icon: "\f0c9";
+$linkedin-icon: "\f08c";
+
+// Font weights
+$regular: 400;
+$bold: 700;
+
+// Tie font families to variables, each named after their semantic role
+// Root-level-header is intended for the main header of content such as a section or article
+$root-level-header: $special-elite-font-stack; 
+$main-nav-font: $special-elite-font-stack;
+
+
+
+
+
+
+

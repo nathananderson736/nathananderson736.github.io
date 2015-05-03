@@ -1,0 +1,36 @@
+/* Base class for list styling */
+.list {
+	list-style-position: inside;
+	overflow: hidden;
+}
+
+/* List for holding content such as articles etc */
+.article-feed { 
+	list-style-type: none;
+	padding-left: 0;
+	/* Target only direct descending list items holding articles, not lists nested in articles etc */
+	> li {
+		margin-bottom: emRhythm(1, $ms-down1);
+	}
+}
+
+/* List containing social media buttons/links to contact developer */
+.contact-links-list {
+	list-style-type: none;
+	padding-left: 0;
+	
+	li {
+		margin-bottom: emRhythm(1, $ms-down1);
+		
+		/* Display list items on same line instead of natural stacking */
+		@include breakpoint(tablet) {
+			display: inline-block;
+		}
+		
+		a {
+			display: inline-block;
+			color: $desert-storm;
+			margin-right: emRhythm(1, $ms-down1);
+		}
+	}
+}

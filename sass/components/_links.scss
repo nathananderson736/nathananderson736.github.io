@@ -1,0 +1,26 @@
+/* Placeholder contains base styling for links */
+%link {
+	text-decoration: none;
+}
+
+/* Link button to project website */
+/* Inherit link placeholder styling */
+.project-link {
+	@extend %link;
+	display: inline-block;
+	color: $desert-storm;
+	background-color: black;
+	padding-top: emRhythm(1, $ms-down1);
+	padding-right: emRhythm(3, $ms-down1);
+	padding-bottom: emRhythm(1, $ms-down1);
+	padding-left: emRhythm(3, $ms-down1);
+	margin-bottom: emRhythm(1, $ms-down1);
+}
+
+.social-link {
+	@include border-radius(50%);
+	background-color: black;
+	.fa {
+		padding: emRhythm(2, $ms-down1);
+	}
+}

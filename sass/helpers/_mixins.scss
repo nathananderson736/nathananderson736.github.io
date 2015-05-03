@@ -1,0 +1,38 @@
+// Mixin allow different styles to be applied, based on screen width
+@mixin breakpoint($class) {
+    
+    // If screen reaches width of 768px / 48em
+    @if $class == tablet {
+        @media (min-width: 48em) { @content; }
+    }
+    
+    // If screen reaches width of 1200px / 75em
+    @else if $class == desktop {
+        @media (min-width: 75em) { @content; }
+    }
+}
+
+@mixin box-sizing($box) {
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+}
+
+@mixin box-decoration($method) {
+    -webkit-box-decoration-break: $method;
+    -ms-box-decoration-break: $method;
+    -o-box-decoration-break: $method;
+    box-decoration-break: $method;
+}
+
+// Mixin to wrap highlight round text
+@mixin text-highlight($highlight: black, $text-color: white, $padding: 0.3em ) {
+    display: inline;
+    background-color: $highlight;
+    color: $text-color;
+    padding: $padding;
+    padding-left: 0;
+    padding-right: 0;
+    @include box-decoration(clone);
+    @include box-shadow($padding 0 0 $highlight, - $padding 0 0 $highlight);
+}

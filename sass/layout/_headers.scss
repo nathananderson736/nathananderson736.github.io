@@ -1,0 +1,11 @@
+// Header for mobile holds hamburger navigation button
+#mobile-header {
+	position: fixed;
+    width: 100%;
+	background-color: transparent;
+    
+    // Menu is already expanded on tablet, defeating the need for header with a menu button to be displayed
+    @include breakpoint(tablet) {
+        display: none;
+    }
+}
